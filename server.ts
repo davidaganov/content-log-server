@@ -7,7 +7,7 @@ import categoriesRouter from "./routes/categories-routes"
 import itemsRouter from "./routes/items-routes"
 
 const PORT = 3000
-const URL = "mongodb://127.0.0.1:27017/plans"
+const URL = "mongodb://localhost:27017/plans"
 
 const app = express()
 
