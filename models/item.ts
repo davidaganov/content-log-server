@@ -1,12 +1,5 @@
+import { Tab } from "../interfaces"
 import { Schema, model } from "mongoose"
-
-export enum Tab {
-  Halfway = "halfway",
-  Finished = "finished",
-  Planned = "planned",
-  Delayed = "delayed",
-  Broken = "broken"
-}
 
 const item = new Schema(
   {

@@ -4,6 +4,7 @@ import cors from "cors"
 
 import authRouter from "./routes/auth-routes"
 import categoriesRouter from "./routes/categories-routes"
+import tabsRouter from "./routes/tabs-routes"
 import itemsRouter from "./routes/items-routes"
 
 const PORT = 3000
@@ -15,6 +16,7 @@ app
   .use(cors())
   .use(express.json())
   .use(categoriesRouter)
+  .use(tabsRouter)
   .use("/auth", authRouter)
   .use("/categories", itemsRouter)
 
